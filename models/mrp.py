@@ -31,10 +31,8 @@ class MrpProduction(models.Model):
                     'product_barcode': ml.product_id.barcode,
                 })
 
-#        res = self.sorted_nicely(res_move_lines, itemgetter('location'))
- #       pp(res)
-  #      return res_move_lines
-        return [1,2,3]
+        res = self.sorted_nicely(res_move_lines, itemgetter('location'))
+        return res_move_lines
 
 
     def sorted_nicely(self, l, key):
